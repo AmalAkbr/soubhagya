@@ -1,0 +1,142 @@
+/* ---- Footer ---- */
+.footer {
+  background: var(--color-charcoal);
+}
+
+.topBand {
+  padding: 5rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.topInner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.logoImg {
+  /* Responsive: scales between 120px and 180px */
+  width: clamp(120px, 15vw, 180px);
+  height: auto;
+  object-fit: contain;
+  /* Slight brightness boost so it reads on the dark footer */
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)) brightness(1.05);
+  transition: var(--transition-smooth);
+}
+
+a:hover .logoImg {
+  filter: drop-shadow(0 3px 12px rgba(201,169,110,0.5)) brightness(1.15);
+  opacity: 0.9;
+}
+
+.tagline {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.4);
+}
+
+.socialRow {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.socialLink {
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  transition: var(--transition-smooth);
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.socialLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-gold);
+  transition: var(--transition-smooth);
+}
+
+.socialLink:hover {
+  color: var(--color-gold);
+}
+
+.socialLink:hover::after {
+  width: 100%;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.contactBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contactBlock p,
+.contactBlock a {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+  transition: var(--transition-smooth);
+}
+
+.contactBlock a:hover {
+  color: var(--color-gold);
+}
+
+.contactHeading {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-gold-light);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.05em;
+}
+
+.bottomBar {
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.bottomBar p {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 900px) {
+  .topInner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .contactGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,136 @@
+/* =============================================
+   SOUBHAGYA — Global Design System
+   ============================================= */
+
+:root {
+  /* Color Palette */
+  --color-cream: #f8f3ec;
+  --color-ivory: #faf7f2;
+  --color-gold: #c9a96e;
+  --color-gold-light: #e8d5a5;
+  --color-gold-dark: #9e7c4a;
+  --color-burgundy: #6b1e2f;
+  --color-burgundy-deep: #4a1220;
+  --color-charcoal: #1a1a1a;
+  --color-charcoal-mid: #2d2d2d;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #5a4a3a;
+  --color-text-light: #8a7a6a;
+  --color-white: #ffffff;
+  --color-overlay: rgba(20, 10, 5, 0.55);
+
+  /* Typography */
+  --font-heading: var(--font-cormorant), 'Georgia', serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+
+  /* Spacing */
+  --section-padding: 6rem 2rem;
+  --container-max: 1280px;
+
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-slow: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ---- Reset & Base ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---- Utility Classes ---- */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 1.2rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--color-charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--color-gold-dark);
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background: var(--color-gold);
+  margin: 0 auto 2rem;
+}
+
+.divider-left {
+  margin: 0 0 2rem;
+}
+
+/* ---- Scroll Animations ---- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: var(--transition-slow);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-delay-1 { transition-delay: 0.1s; }
+.fade-in-delay-2 { transition-delay: 0.2s; }
+.fade-in-delay-3 { transition-delay: 0.3s; }
+.fade-in-delay-4 { transition-delay: 0.4s; }
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 3px;
+}
