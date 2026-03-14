@@ -34,15 +34,18 @@ export default function Footer() {
             <div className={styles.contactGrid}>
               <div className={styles.contactBlock}>
                 <h4 className={styles.contactHeading}>Visit Us</h4>
-                <p>123, Silk Bazaar Lane,</p>
-                <p>Varanasi, Uttar Pradesh — 221001</p>
+                <p>Ponnani Road, Edappal,</p>
+                <p>Malappuram, Kerala</p>
                 <p>India</p>
               </div>
               <div className={styles.contactBlock}>
                 <h4 className={styles.contactHeading}>Reach Out</h4>
                 <p>soubhagya@textiles.in</p>
-                <p>+91 98765 43210</p>
-                <p>Mon–Sat: 10am – 7pm</p>
+                <a href="tel:+919048630757">+91 90486 30757</a>
+                <a href="https://wa.me/919048630757" target="_blank" rel="noopener noreferrer">
+                  WhatsApp Us
+                </a>
+                <p>All Days: 9am – 9pm</p>
               </div>
               <div className={styles.contactBlock}>
                 <h4 className={styles.contactHeading}>Explore</h4>

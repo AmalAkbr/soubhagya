@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Collections from "@/components/Collections";
 import Lookbook from "@/components/Lookbook";
+import MapSection from "@/components/MapSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Collections />
       <Lookbook />
+      <MapSection />
       <Footer />
     </main>
   );

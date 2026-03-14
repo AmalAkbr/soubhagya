@@ -35,7 +35,7 @@ export default function About() {
             />
           </div>
           <div className={styles.badge}>
-            <span className={styles.badgeNum}>75+</span>
+            <span className={styles.badgeNum}>35+</span>
             <span className={styles.badgeLabel}>Years of Craft</span>
           </div>
         </div>

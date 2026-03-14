@@ -1,0 +1,118 @@
+/* ---- Map Section ---- */
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 520px;
+  background: var(--color-cream);
+}
+
+/* Info (left) side */
+.info {
+  padding: 3.5rem 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-cream);
+}
+
+.title {
+  font-size: clamp(2rem, 3.5vw, 3.5rem) !important;
+}
+
+.divider {
+  margin-bottom: 2.5rem !important;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.detailItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.detailItem strong {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.detailItem p,
+.detailItem a {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  display: block;
+  transition: var(--transition-smooth);
+}
+
+.detailItem a:hover {
+  color: var(--color-gold-dark);
+}
+
+.directionsBtn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background: var(--color-charcoal);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: fit-content;
+  transition: var(--transition-smooth);
+}
+
+.directionsBtn:hover {
+  background: var(--color-gold-dark);
+  transform: translateY(-2px);
+}
+
+/* Map (right) side */
+.mapWrap {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  padding: 2.5rem 2.5rem 2.5rem 0;
+  background: var(--color-cream);
+}
+
+.mapWrap iframe {
+  position: absolute;
+  inset: 2.5rem 2.5rem 2.5rem 0;
+  width: calc(100% - 2.5rem);
+  height: calc(100% - 5rem);
+  filter: grayscale(10%) contrast(1.05);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    padding: 4rem 2rem;
+  }
+
+  .mapWrap {
+    min-height: 350px;
+  }
+}

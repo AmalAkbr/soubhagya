@@ -1,8 +1,38 @@
 /* ---- Collections ---- */
 .collections {
-  padding: 8rem 2rem;
+  padding: 5rem 2rem 0;
   background: var(--color-charcoal);
+  position: relative;
+  overflow: hidden;
 }
+
+/* Video background */
+.videoBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  z-index: 0;
+  opacity: 0.65;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Dark overlay so cards stay legible */
+.videoOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 5, 2, 0.52) 0%,
+    rgba(26, 10, 5, 0.45) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
 
 .header {
   text-align: center;
@@ -19,7 +49,7 @@
 
 .intro {
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgba(255,255,255,0.55);
   max-width: 540px;
   margin: 0 auto;
@@ -107,7 +137,7 @@
 
 .cardDesc {
   font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   color: rgba(255,255,255,0.5);
   line-height: 1.8;
   margin-bottom: 1.5rem;

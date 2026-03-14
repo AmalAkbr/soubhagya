@@ -53,7 +53,19 @@ export default function Collections() {
 
   return (
     <section className={styles.collections} id="collections" ref={sectionRef}>
-      <div className="container">
+      {/* Video Background */}
+      <video
+        className={styles.videoBg}
+        src="/images/vid1_clean.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{ pointerEvents: "none" }}
+      />
+      <div className={styles.videoOverlay} />
+
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className={styles.header}>
           <p className="section-label">What We Offer</p>
           <h2 className={`section-title ${styles.title}`}>
