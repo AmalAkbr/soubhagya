@@ -4,6 +4,12 @@
   background: var(--color-cream);
 }
 
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 1.5rem;
+  }
+}
+
 .inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -122,11 +128,16 @@
     gap: 4rem;
   }
   .imgFrame {
-    aspect-ratio: 4/3;
+    aspect-ratio: 4/5;
   }
   .badge {
-    right: 1rem;
-    bottom: -1rem;
+    right: -0.5rem;
+    bottom: -0.5rem;
+    width: 90px;
+    height: 90px;
+  }
+  .badgeNum {
+    font-size: 1.5rem;
   }
 }
 

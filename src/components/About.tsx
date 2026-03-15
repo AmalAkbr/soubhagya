@@ -28,7 +28,7 @@ export default function About() {
           <div className={styles.imgFrame}>
             <Image
               src="/images/about.png"
-              alt="Soubhagya artisan weaver at the handloom"
+              alt="Premium curated textile collection"
               fill
               quality={90}
               style={{ objectFit: "cover" }}
@@ -36,7 +36,7 @@ export default function About() {
           </div>
           <div className={styles.badge}>
             <span className={styles.badgeNum}>35+</span>
-            <span className={styles.badgeLabel}>Years of Craft</span>
+            <span className={styles.badgeLabel}>Years of Excellence</span>
           </div>
         </div>
 
@@ -47,16 +47,16 @@ export default function About() {
           </h2>
           <div className={`divider divider-left fade-in fade-in-delay-2`} />
           <p className={`${styles.body} fade-in fade-in-delay-3`}>
-            Soubhagya was born from a deep love for India&apos;s rich weaving traditions. For over seven decades, our family of artisans has hand-crafted some of the finest silk sarees, Banarasi weaves, and heritage fabrics — each piece a living testament to the skill passed down through generations.
+            Soubhagya was born from a passion for preserving and providing India&apos;s finest textiles. For over three decades, we have carefully curated an exquisite range of silk sarees, Banarasi weaves, and heritage fabrics — each piece sourced directly from master artisans across the country.
           </p>
           <p className={`${styles.body} fade-in fade-in-delay-3`}>
-            We believe that true luxury lies not in the price tag, but in the story behind every thread — the patient hands of the weaver, the ancient looms, the natural dyes, and the cultural pride stitched into every drape.
+            We believe that true luxury lies in the curation of quality — the mastery of the artisans we source from, the authenticity of the fabrics, and the cultural pride stitched into every drape.
           </p>
           <div className={`${styles.pillars} fade-in fade-in-delay-4`}>
             {[
-              { icon: "✦", title: "Handwoven", desc: "Every piece crafted on traditional looms" },
+              { icon: "✦", title: "Curated Excellence", desc: "Each piece handpicked from master artisans" },
               { icon: "✦", title: "Pure Fabrics", desc: "Finest silk, cotton & zari threads" },
-              { icon: "✦", title: "Heritage", desc: "Designs rooted in Indian culture" },
+              { icon: "✦", title: "Authenticity", desc: "Directly sourced from heritage clusters" },
             ].map((p) => (
               <div key={p.title} className={styles.pillar}>
                 <span className={styles.pillarIcon}>{p.icon}</span>

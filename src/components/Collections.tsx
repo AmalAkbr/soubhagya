@@ -6,29 +6,29 @@ const collections = [
   {
     id: "col-banarasi",
     name: "Banarasi Silks",
-    desc: "Opulent weaves from Varanasi's ancient looms, interlaced with gold and silver zari.",
-    tag: "Signature Collection",
+    desc: "Opulent Banarasi silks, handpicked for their timeless quality and intricate zari work.",
+    tag: "Signature Curation",
     accent: "#9e7c4a",
   },
   {
     id: "col-kanjivaram",
     name: "Kanjivaram",
-    desc: "The pride of South India — pure mulberry silk sarees with bold contrast borders.",
-    tag: "Heritage Weave",
+    desc: "The finest Kanjivarams, sourced from the heritage looms of the South, featuring bold contrast borders.",
+    tag: "Heritage Selection",
     accent: "#6b1e2f",
   },
   {
     id: "col-chanderi",
     name: "Chanderi Classics",
-    desc: "Sheer, lightweight fabric with subtle golden motifs — perfect for every season.",
-    tag: "Everyday Elegance",
+    desc: "Authentic Chanderi fabrics, curated for the modern wardrobe with subtle golden motifs.",
+    tag: "Everyday Style",
     accent: "#2e5a4b",
   },
   {
     id: "col-handblock",
     name: "Hand Block Prints",
-    desc: "Natural dyes and hand-carved wooden blocks create one-of-a-kind earthy patterns.",
-    tag: "Artisan Craft",
+    desc: "Premium block-printed textiles, celebrating artisanal diversity and earthy patterns from across India.",
+    tag: "Artisan Picks",
     accent: "#4a3520",
   },
 ];
@@ -73,7 +73,7 @@ export default function Collections() {
           </h2>
           <div className="divider" />
           <p className={styles.intro}>
-            Each collection is a chapter — woven from the finest materials, rooted in tradition, and curated for the modern Indian woman.
+            Each collection is a chapter — sourced from the finest materials, rooted in tradition, and curated for the modern Indian woman.
           </p>
         </div>
 

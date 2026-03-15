@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottomBar}>
-        <p>© {new Date().getFullYear()} Soubhagya Textiles. All rights reserved. Crafted with love in India.</p>
+        <p>© {new Date().getFullYear()} Soubhagya Textiles. All rights reserved. Curated with love in India.</p>
       </div>
     </footer>
   );

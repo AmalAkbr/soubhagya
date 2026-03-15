@@ -30,11 +30,11 @@ export default function Hero() {
       <div className={styles.content}>
         <p className={styles.label}>Est. Since Generations</p>
         <h1 className={styles.tagline} ref={taglineRef}>
-          Woven with<br />
-          <em>Soul &amp; Silk</em>
+          Curated for<br />
+          <em>Elegance &amp; Grace</em>
         </h1>
         <p className={styles.subtitle}>
-          Where every thread tells a story of heritage, artistry,<br className={styles.br} /> and timeless Indian elegance.
+          Discover a world where every fabric tells a story of quality,<br className={styles.br} /> heritage, and timeless Indian style.
         </p>
         <div className={styles.ctas}>
           <a href="#collections" id="hero-collections-cta" className={styles.btnPrimary}>

@@ -10,6 +10,12 @@
   background: transparent;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+}
+
 .navbar.scrolled {
   background: rgba(26, 26, 26, 0.96);
   backdrop-filter: blur(12px);
@@ -34,7 +40,7 @@
 
 .logoImg {
   /* Responsive: shrinks on mobile, max 150px on desktop */
-  width: clamp(90px, 12vw, 150px);
+  width: clamp(80px, 15vw, 150px);
   height: auto;
   object-fit: contain;
   /* Drop-shadow makes it pop on both transparent & dark navbar */

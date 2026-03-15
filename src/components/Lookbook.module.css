@@ -4,6 +4,15 @@
   background: var(--color-ivory);
 }
 
+@media (max-width: 768px) {
+  .lookbook {
+    padding: 4rem 0 0 0;
+  }
+  .headingBlock {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .headingBlock {
   text-align: center;
   padding: 0 2rem;

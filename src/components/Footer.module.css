@@ -129,14 +129,26 @@ a:hover .logoImg {
   .topInner {
     grid-template-columns: 1fr;
     gap: 3rem;
+    text-align: center;
+  }
+  .brand {
+    align-items: center;
+  }
+  .socialRow {
+    justify-content: center;
   }
   .contactGrid {
     grid-template-columns: repeat(2, 1fr);
+    text-align: left;
   }
 }
 
 @media (max-width: 500px) {
   .contactGrid {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .topBand {
+    padding: 3rem 1.5rem;
   }
 }

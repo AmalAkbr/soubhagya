@@ -10,6 +10,14 @@
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    align-items: center;
+    padding-bottom: 0;
+    text-align: center;
+  }
+}
+
 .imageWrap {
   position: absolute;
   inset: 0;
@@ -83,6 +91,16 @@
   display: flex;
   gap: 1.2rem;
   flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .ctas {
+    justify-content: center;
+  }
+  .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .btnPrimary {

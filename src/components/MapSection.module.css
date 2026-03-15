@@ -109,10 +109,29 @@
   }
 
   .info {
-    padding: 4rem 2rem;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .detailItem {
+    justify-content: center;
+    text-align: left; /* Keep text left aligned but block centered */
   }
 
   .mapWrap {
     min-height: 350px;
+    padding: 1.5rem;
+  }
+
+  .mapWrap iframe {
+    inset: 1.5rem;
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
   }
 }
