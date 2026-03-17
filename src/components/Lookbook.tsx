@@ -32,6 +32,34 @@ const models = [
     label: "Banarasi Sapphire",
     caption: "Intricate gold brocade weave",
   },
+  {
+    id: "look-churidar",
+    src: "/images/model5.png",
+    alt: "Model in elegant Churidar suit",
+    label: "Heritage Churidar",
+    caption: "Intricate embroidery & silk dupatta",
+  },
+  {
+    id: "look-men-shirt",
+    src: "/images/model6.png",
+    alt: "Model in premium men's shirt",
+    label: "Men's Silk-Cotton",
+    caption: "Premium handcrafted shirts",
+  },
+  {
+    id: "look-pants",
+    src: "/images/model7.png",
+    alt: "Model in premium trousers",
+    label: "Linen-Silk Trousers",
+    caption: "Modern fit, heritage fabric",
+  },
+  {
+    id: "look-shawl",
+    src: "/images/model8.png",
+    alt: "Premium handcrafted shawl",
+    label: "Artisanal Shawls",
+    caption: "Exquisite Pashmina-style weave",
+  },
 ];
 
 export default function Lookbook() {

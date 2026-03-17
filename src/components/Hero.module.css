@@ -12,8 +12,8 @@
 
 @media (max-width: 768px) {
   .hero {
-    align-items: center;
-    padding-bottom: 0;
+    align-items: flex-end;
+    padding-bottom: 8rem;
     text-align: center;
   }
 }
@@ -178,7 +178,7 @@
 
 @media (max-width: 768px) {
   .content { padding: 0 1.5rem; }
-  .hero { padding-bottom: 6rem; }
+  .hero { padding-bottom: 8.5rem; }
   .scrollIndicator { right: 1.5rem; }
   .br { display: none; }
 }

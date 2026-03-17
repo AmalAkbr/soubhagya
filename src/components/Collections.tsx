@@ -56,11 +56,14 @@ export default function Collections() {
       {/* Video Background */}
       <video
         className={styles.videoBg}
-        src="/images/vid1_clean.mp4"
+        src="/images/vid1_boomerang.mp4"
         autoPlay
         muted
         loop
         playsInline
+        controls={false}
+        disablePictureInPicture
+        controlsList="nodownload nofullscreen noremoteplayback"
         style={{ pointerEvents: "none" }}
       />
       <div className={styles.videoOverlay} />
