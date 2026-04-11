@@ -106,7 +106,7 @@ export default function Lookbook() {
                 alt={model.alt}
                 fill
                 quality={90}
-                style={{ objectFit: "cover", objectPosition: "center top" }}
+                style={{ objectFit: "cover", objectPosition: "center 35%" }}
               />
               <div className={styles.cardOverlay}>
                 <div className={styles.cardInfo}>
